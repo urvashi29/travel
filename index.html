@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/globe.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mfr2dox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Owl carousal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Owl carousal -->
+    <title>Travelo</title>
+</head>
+
+<body onload="index()">
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#!"><img src="./images/logo.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#!">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html" target="_blank">About</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+ 
+    </style>
+    <main>
+        <section class="section hero">
+            <div class="banner__content">
+                    <h1 id="travel">Travel To explore</h1>
+
+                <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore
+                    Et Dolore Magna Aliqua. Ultricies Mi Eget Mauris Pharetra. Amet Risus Nullam Eget Felis Eget Nunc
+                    Lobortis. Purus In Massa Tempor Nec. Porta Nibh Venenatis Cras Sed. Viverra Ipsum Nunc Aliquet
+                    Bibendum Enim. Risus Pretium Quam Vulputate Dignissim Suspendisse In. </p>
+            </div>
+            <div class="hero__cards">
+                <div>
+                    <img src="./images/hero_img-1.png" alt="hero-img">
+                    <h3>Get Best Prices
+                        Guarantee </h3>
+                    <p>Pay through our application and save thousands and get amazing rewards </p>
+                </div>
+                <div>
+                    <img src="./images/hero_img-2.png" alt="hero-img">
+                    <h3>Covid Safe
+                        Environment</h3>
+                    <p>We have all the curated hotels that have all the precaution for a corvid
+                        safe environment</p>
+                </div>
+                <div>
+                    <img src="./images/hero_img-3.png" alt="hero-img">
+                    <h3>Flexible Payment
+                        Option </h3>
+                    <p>Enjoy the flexible payment through our app and get rewards on every payment </p>
+                </div>
+                <div>
+                    <img src="./images/hero_img-4.png" alt="hero-img">
+                    <h3>Find The Best
+                        Near You</h3>
+                    <p>Find the best hotels and places to visit near you in a single click </p>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="section-spacer"></div> -->
+        <section class="section destination">
+            <h1>Recommended Destination</h1>
+            <ul class="tabs">
+                <li id="default-filter" data-target="weekend">The Weekend Break</li>
+                <li data-target="package">The Package Holiday</li>
+                <li data-target="group">The Group Tour</li>
+                <li data-target="long">Long Term Slow Travel</li>
+            </ul>
+            <div class="cards">
+                <div class="card" data-item="weekend">
+                    <div class="image">
+
+                        <img src="./images/Singapore.jpg" alt="destination">
+                    </div>
+                    <h3>Singapore</h3>
+                    <p>Singapore, officially the Republic of Singapore, is a sovereign island city-state in maritime
+                        Southeast Asia.</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="weekend">
+                    <div class="image">
+                        <img src="./images/Thailand.png" alt="destination">
+                    </div>
+                    <h3>Thailand</h3>
+                    <p>Thailand is a Southeast Asian country. It's known for tropical beaches, opulent royal palaces</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="weekend">
+                    <div class="image">
+
+                        <img src="./images/paris.jpg" alt="destination">
+                    </div>
+                    <h3>Paris</h3>
+                    <p>Paris, France's capital, is a major European city and a global center for art, fashion,
+                        gastronomy and culture.</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="weekend">
+                    <div class="image">
+
+                        <img src="./images/Singapore.jpg" alt="destination">
+                    </div>
+                    <h3>New Zealand</h3>
+                    <p>New Zealand is an island country in the southwestern Pacific Ocean. It consists of two main
+                        landmasses</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="weekend">
+                    <div class="image">
+                        <img src="./images/bora.jpg" alt="destination">
+                    </div>
+                    <h3>Bora Bora</h3>
+                    <p>Bora Bora is a small South Pacific island northwest of Tahiti in French Polynesia. Surrounded by
+                        sand</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="weekend">
+                    <div class="image">
+                        <img src="./images/london.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="package">
+                    <div class="image">
+                        <img src="./images/kerala.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="package">
+                    <div class="image">
+                        <img src="./images/london.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="group">
+                    <div class="image">
+                        <img src="./images/london.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="long">
+                    <div class="image">
+                        <img src="./images/bora.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+                <div class="card" data-item="long">
+                    <div class="image">
+                        <img src="./images/newzeeland.jpg" alt="destination">
+                    </div>
+                    <h3>London </h3>
+                    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history
+                        stretching</p>
+                    <div class="options">
+                        <div class="services">
+                            <div>
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                                <img src="./images/services-1.png" alt="services">
+                            </div>
+                            <span>1000km</span>
+                        </div>
+                        <div class="prize"><span>₹ 38,800</span> <span>Approx 2 night trip</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section blogs">
+            <h1>Blogs</h1>
+            <div class="blogs__grid">
+                <div class="blog__1">
+                    <div class="inner">
+                        <p>The Ultimate Guide
+                            to Climbing
+                            Mount Kilimanjaro</p>
+                    </div>
+                </div>
+                <div class="blog__2">
+                    <div class="inner">
+                        <p>The Ultimate Guide
+                            to Climbing
+                            Mount Kilimanjaro</p>
+                    </div>
+                </div>
+                <div class="blog__3">
+                    <div class="inner">
+                        <p>The Ultimate Guide
+                            to Climbing
+                            Mount Kilimanjaro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section customers ">
+            <h1>Happy
+                Customers</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="content">
+                    <div class="desc">
+                        <img class="quote" src="./images/quote.png" alt="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget
+                            felis
+                            eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum
+                            nunc
+                            aliquet bibendum enim. Risus pretium quam vulputate dignissim suspendisse in. Non quam lacus
+                            suspendisse faucibus interdum posuere lorem ipsum dolor. Facilisi cras fermentum odio eu
+                            feugiat
+                            pretium nibh ipsum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Netus et
+                            malesuada fames ac turpis egestas. Sed arcu non odio euismod lacinia at quis risus sed. </p>
+                        <div class="user">
+                            <img src="./images/user_1.png" alt="user">
+                            <p>Shalini Singh</p>
+                            <p>Project Manger flyhigh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="desc">
+                        <img class="quote" src="./images/quote.png" alt="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget
+                            felis
+                            eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum
+                            nunc
+                            aliquet bibendum enim. Risus pretium quam vulputate dignissim suspendisse in. Non quam lacus
+                            suspendisse faucibus interdum posuere lorem ipsum dolor. Facilisi cras fermentum odio eu
+                            feugiat
+                            pretium nibh ipsum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Netus et
+                            malesuada fames ac turpis egestas. Sed arcu non odio euismod lacinia at quis risus sed. </p>
+                        <div class="user">
+                            <img src="./images/user_1.png" alt="user">
+                            <p>Shalini Singh</p>
+                            <p>Project Manger flyhigh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="desc">
+                        <img class="quote" src="./images/quote.png" alt="quote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ultricies mi eget mauris pharetra. Amet risus nullam eget
+                            felis
+                            eget nunc lobortis. Purus in massa tempor nec. Porta nibh venenatis cras sed. Viverra ipsum
+                            nunc
+                            aliquet bibendum enim. Risus pretium quam vulputate dignissim suspendisse in. Non quam lacus
+                            suspendisse faucibus interdum posuere lorem ipsum dolor. Facilisi cras fermentum odio eu
+                            feugiat
+                            pretium nibh ipsum. Risus sed vulputate odio ut enim blandit volutpat maecenas. Netus et
+                            malesuada fames ac turpis egestas. Sed arcu non odio euismod lacinia at quis risus sed. </p>
+                        <div class="user">
+                            <img src="./images/user_1.png" alt="user">
+                            <p>Shalini Singh</p>
+                            <p>Project Manger flyhigh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="copy">Copyright © 2020 Travelo. All rights reserved</div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./about.html" target="_blank">About</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+
+                <li><a id="fb" href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a id="in" href="https://www.linkedin.com/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a id="insta" href="https://www.google.com" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
